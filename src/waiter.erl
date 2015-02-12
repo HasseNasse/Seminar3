@@ -71,7 +71,7 @@ timetowait()->
 		done->
 			receive
 				done->
-					io:format("xxxxxxxxxxxxxxxxx Both Philosophers are done Eating xxxxxxxxxxxxxxxxx ~n"),
+					io:format("- Both Philosophers are done Eating - ~n"),
 					permission()
 			end;
         {Right1, Left1, F1} ->
