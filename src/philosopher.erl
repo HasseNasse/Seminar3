@@ -19,7 +19,6 @@ init(0,_,_,Name,Ctrl,Waiter)->
 	Ctrl ! done;
 
 init(Hungry, Right,Left,Name,Ctrl,Waiter)->
-	Gui = gui:start(Name),
 	dream(Hungry, Right, Left, Name, Ctrl, Waiter).
 	
 
