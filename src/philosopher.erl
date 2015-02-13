@@ -19,6 +19,7 @@ init(0,_,_,Name,Ctrl,Waiter)->
 	Ctrl ! done;
 
 init(Hungry, Right,Left,Name,Ctrl,Waiter)->
+	Gui = gui:start(Name),
 	dream(Hungry, Right, Left, Name, Ctrl, Waiter).
 	
 
@@ -26,6 +27,7 @@ dream(Hungry, Right, Left, Name, Ctrl, Waiter) ->
 	io:format("~s is now asleep. HUNGER=~p ~n", [Name,Hungry]),
     sleep(100, 500),
     order(Hungry, Right, Left, Name, Ctrl, Waiter).
+	
 
 sleep(T,D)->
 	timer:sleep(T + random:uniform(D)).
