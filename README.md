@@ -1,5 +1,5 @@
 # The-Dining-Philosophers-Erlang
-This is a implementation of The Dining Philosophers in Erlang.
+This is a implementation of The Dining Philosophers problem implemented in Erlang.
 The application is created to show what the behaviour of 5 philosophers are when put in a situation that they only have 5 chopsticks to eat
 with and they cycle between being awake(wanting to eat) and asleep.
 
